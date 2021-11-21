@@ -1,11 +1,9 @@
 import './App.css';
-import Portfolio from './components/pages/Portfolio';
+import Main from './components/Main';
 
 function App() {
   return (
-    <div className="portfolio-page">
-      <Portfolio />
-    </div>
+    <Main />
   );
 }
 
