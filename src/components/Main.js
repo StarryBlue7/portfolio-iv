@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import Navigation from './Navigation';
+import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
@@ -11,16 +12,13 @@ function Main() {
     const [currentPage, setCurrentPage] = useState('Home');
 
     const renderPage = () => {
-        if (currentPage === 'Home') {
-            return <AboutMe />;
+        switch (currentPage) {
+            case 'About': return <AboutMe />;
+            case 'Portfolio': return <Portfolio />;
+            case 'Resume': return <Resume />;
+            case 'Contact': return <Contact />;
+            default: return <Home />;
         }
-        if (currentPage === 'About') {
-            return <Portfolio />;
-        }
-        if (currentPage === 'Blog') {
-            return <Resume />;
-        }
-        return <Contact />;
     };
 
     const handlePageChange = (page) => setCurrentPage(page);
