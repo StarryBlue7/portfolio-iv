@@ -30,7 +30,7 @@ a:hover {
     color: #A6E1FA;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: var(--header-font);
     color: var(--accent-color)
 }
