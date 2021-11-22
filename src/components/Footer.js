@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
     return (
-        <div>Footer</div>
+        <footer>&copy; Vince Lee 2021</footer>
     )
 }
 
