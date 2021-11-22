@@ -1,0 +1,36 @@
+:root {
+    --header-font: 'heyAugust', 'Satisfy';
+    --content-font: 'Montserrat';
+    --main-text-color: white;
+    --accent-color: #A6E1FA;
+}
+
+@font-face {
+    font-family: heyAugust;
+    src: url(HeyAugust.ttf);
+}
+
+body {
+    background-image: linear-gradient(150deg, black, #00072D, black);
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    color: var(--main-text-color);
+    font-size: 36px;
+    font-family: var(--content-font);
+    z-index: -2;
+}
+
+a {
+    text-decoration: none;
+    color: #0E6BA8;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #A6E1FA;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    color: var(--accent-color)
+}
