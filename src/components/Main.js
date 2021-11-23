@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Header from './Header';
-import Navigation from './Navigation';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
@@ -25,8 +24,7 @@ function Main() {
 
     return (
         <main className="portfolio-page">
-            <Header />
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
             {renderPage()}
             <Footer />
         </main>
