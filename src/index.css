@@ -14,7 +14,7 @@
 
 body {
   background-image: linear-gradient(150deg, black, #00072D, black);
-  min-height: 100vh;
+  min-height: 98vh;
   scroll-behavior: smooth;
   color: var(--main-text-color);
   font-size: 36px;
@@ -34,5 +34,6 @@ a:hover {
 
 h1, h2 {
   font-family: var(--header-font);
-  color: var(--accent-color)
+  color: var(--accent-color);
+  font-weight: normal;
 }
