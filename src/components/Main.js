@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import Fade from 'react-reveal/Fade';
 import Header from './Header';
-import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
@@ -8,24 +8,27 @@ import Contact from './pages/Contact'
 import Footer from './Footer';
 
 function Main() {
-    const [currentPage, setCurrentPage] = useState('Home');
-
-    const renderPage = () => {
-        switch (currentPage) {
-            case 'About': return <AboutMe />;
-            case 'Portfolio': return <Portfolio />;
-            case 'Resume': return <Resume />;
-            case 'Contact': return <Contact />;
-            default: return <Home />;
-        }
-    };
+    const [currentPage, setCurrentPage] = useState('');
 
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <main className="portfolio-page">
+        <main style={{overflow: "hidden"}}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-            {renderPage()}
+
+            <Fade bottom collapse when={currentPage === 'About'}>
+                <AboutMe />
+            </Fade>
+            <Fade bottom collapse when={currentPage === 'Portfolio'}>
+                <Portfolio />
+            </Fade>
+            <Fade bottom collapse when={currentPage === 'Resume'}>
+                <Resume />
+            </Fade>
+            <Fade bottom collapse when={currentPage === 'Contact'}>
+                <Contact />
+            </Fade>
+            
             <Footer />
         </main>
     );
