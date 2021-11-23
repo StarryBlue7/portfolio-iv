@@ -5,7 +5,7 @@ import linkedInIcon from '../../assets/icons/linkedin.svg';
 
 function Contact() {
     return (
-        <section id="contact">
+        <section>
             <h2>Contact Me</h2>
             <section>
                 <a target="_blank" rel="noreferrer" href="mailto:StarryBlue7@gmail.com">
