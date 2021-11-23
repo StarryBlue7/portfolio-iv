@@ -29,6 +29,10 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: white;
+}
+
+.active {
   color: #A6E1FA;
 }
 
