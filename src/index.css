@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Satisfy&display=swap');
+
+:root {
+  --header-font: 'heyAugust', 'Satisfy', 'Garamond';
+  --content-font: 'Montserrat', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+  --main-text-color: white;
+  --accent-color: #A6E1FA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: heyAugust;
+  src: url(assets/HeyAugust.ttf);
+}
+
+body {
+  background-image: linear-gradient(150deg, black, #00072D, black);
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  color: var(--main-text-color);
+  font-size: 36px;
+  font-family: var(--content-font);
+  z-index: -2;
+}
+
+a {
+  text-decoration: none;
+  color: #0E6BA8;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #A6E1FA;
+}
+
+h1, h2 {
+  font-family: var(--header-font);
+  color: var(--accent-color)
 }
