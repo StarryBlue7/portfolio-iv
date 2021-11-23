@@ -1,5 +1,5 @@
 import React from 'react';
-import Slide from 'react-reveal/Slide';
+import Fade from 'react-reveal/Fade';
 import profileImg from '../assets/images/profile.png';
 import Navigation from './Navigation';
 
@@ -11,10 +11,11 @@ const styles = {
         alignItems: "center"
     },
     profile: {
-        paddingTop: "15vh",
+        
         paddingBottom: 10,
     },
     profilePhoto: {
+        paddingTop: "15vh",
         width: 325,
     },
     h1: {
@@ -31,13 +32,16 @@ const styles = {
 function Header({ currentPage, handlePageChange }) {
     return (
         <header style={styles.header}>
-            <Slide top collapse when={currentPage === 'Home'}>
-                <div style={styles.profile}>
-                    <img style={styles.profilePhoto} alt="Vince Lee" src={profileImg} />
-                    <h1 style={styles.h1}>Vince Lee</h1> 
-                    <h3 style={styles.h3}>Full Stack Web Developer</h3>
-                </div>
-            </Slide>
+            <Fade top collapse when={currentPage === 'Home'}>
+                <img 
+                    style={styles.profilePhoto} 
+                    alt="Vince Lee" 
+                    src={profileImg}
+                    onLoad={() => handlePageChange('Home')} 
+                />
+                <h1 style={styles.h1}>Vince Lee</h1> 
+                <h3 style={styles.h3}>Full Stack Web Developer</h3>
+            </Fade>
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
         </header>
     )
