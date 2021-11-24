@@ -3,7 +3,7 @@ import ContactForm from '../ContactForm';
 
 function Contact() {
     return (
-        <section className="page">
+        <section className="page" style={{paddingBottom: "20vh"}}>
             <h2>Contact Me</h2>
             <ContactForm />
         </section>

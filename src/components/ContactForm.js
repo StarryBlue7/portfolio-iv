@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
 const styles = {
+    container: {
+        flexGrow: 1,
+    },
     form: {
         display: 'flex',
         flexFlow: 'row wrap',
         gap: 20,
+        
     },
     info: {
-        flex: '1 1 40%',
+        flex: '1 1 1',
+        fontSize: '50%'
     },
     message: {
         flex: '1 1 80%',
+        fontSize: '50%'
+    },
+    error: {
+        fontSize: '50%'
     }
 }
 
@@ -90,7 +99,7 @@ function ContactForm() {
             </form>
             {errorMessage && (
                 <div>
-                    <p className="error-text">{errorMessage}</p>
+                    <p style={styles.error}>{errorMessage}</p>
                 </div>
             )}
         </article>
