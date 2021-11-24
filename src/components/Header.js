@@ -23,7 +23,7 @@ const styles = {
         fontSize: "300%",
     },
     h3: {
-        margin: "-25px 0px 0px 0px",
+        margin: "-25px 0px 10px 0px",
         fontSize: "75%",
         fontWeight: "normal",
     }
@@ -37,10 +37,10 @@ function Header({ currentPage, handlePageChange }) {
                     style={styles.profilePhoto} 
                     alt="Vince Lee" 
                     src={profileImg}
-                    onLoad={() => handlePageChange('Home')} 
+                    onLoad={() => handlePageChange('About')} 
                 />
                 <h1 style={styles.h1}>Vince Lee</h1> 
-                <h3 style={styles.h3}>Full Stack Web Developer</h3>
+                <h3 style={styles.h3}>Full-Stack Web Developer</h3>
             </Fade>
             <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
         </header>
