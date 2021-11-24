@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutMe() {
     return (
-        <section id="about">
+        <section className="page">
             <h2>About Me</h2>
             <p>
                 Having grown up in a household of web developers, web design has always been a part of my life, if only at times as side projects here and there.
