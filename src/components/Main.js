@@ -7,13 +7,19 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact'
 import Footer from './Footer';
 
+const styles = {
+    overflow: "hidden",
+    minHeight: "98vh",
+    height: "fit-content",
+}
+
 function Main() {
     const [currentPage, setCurrentPage] = useState('');
 
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <main style={{overflow: "hidden"}}>
+        <main style={styles}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
             <Fade bottom collapse when={currentPage === 'About'}>

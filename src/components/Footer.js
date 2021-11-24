@@ -7,25 +7,24 @@ import linkedInIcon from '../assets/icons/linkedin.svg';
 const styles = {
     iconBox: {
         display: "flex",
+        justifyContent: "center",
         gap: 20,
     },
     icon: {
         filter: "invert(1)",
         width: 50
     },
-    text: {
+    footer: {
+        marginTop: "10vh",
         textAlign: "center",
-        fontSize: "60%",
-        position: "absolute",
-        bottom: 5,
-        transform: "translateX(-50%)",
-        left: "50%"
+        fontSize: "50%",
+        alignSelf: "flex-end",
     }
 }
 
 function Footer() {
     return (
-        <footer style={styles.text}>
+        <footer style={styles.footer}>
             <section style={styles.iconBox}>
                 <a target="_blank" rel="noreferrer" href="mailto:StarryBlue7@gmail.com">
                     <img alt="Email" style={styles.icon} src={emailIcon} />
