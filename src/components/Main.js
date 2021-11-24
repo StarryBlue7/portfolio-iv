@@ -11,6 +11,9 @@ const styles = {
     overflow: "hidden",
     minHeight: "98vh",
     height: "fit-content",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
 }
 
 function Main() {

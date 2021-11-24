@@ -1,8 +1,7 @@
 import React from 'react';
 
-import emailIcon from '../assets/icons/envelope.svg';
-import gitHubIcon from '../assets/icons/github.svg';
-import linkedInIcon from '../assets/icons/linkedin.svg';
+import { BiMailSend } from 'react-icons/bi'
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const styles = {
     iconBox: {
@@ -11,14 +10,13 @@ const styles = {
         gap: 20,
     },
     icon: {
-        filter: "invert(1)",
-        width: 50
+        fontSize: "300%"
     },
     footer: {
         marginTop: "10vh",
         textAlign: "center",
         fontSize: "50%",
-        alignSelf: "flex-end",
+        justifySelf: "flex-end",
     }
 }
 
@@ -27,15 +25,15 @@ function Footer() {
         <footer style={styles.footer}>
             <section style={styles.iconBox}>
                 <a target="_blank" rel="noreferrer" href="mailto:StarryBlue7@gmail.com">
-                    <img alt="Email" style={styles.icon} src={emailIcon} />
+                    <BiMailSend style={styles.icon} />
                 </a>
                 
                 <a target="_blank" rel="noreferrer" href="https://github.com/StarryBlue7">
-                    <img alt="GitHub" style={styles.icon} src={gitHubIcon} />
+                    <FaGithub style={styles.icon} />
                 </a>
                 
                 <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/vince-lee">
-                    <img alt="LinkedIn" style={styles.icon} src={linkedInIcon} />
+                    <FaLinkedin style={styles.icon} />
                 </a>
             </section>
             <p>&copy; Vince Lee 2021</p>
