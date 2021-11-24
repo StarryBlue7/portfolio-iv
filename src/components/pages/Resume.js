@@ -8,6 +8,7 @@ const styles = {
     }
 }
 
+// Resume page
 function Resume() {
     return (
         <section className="page">

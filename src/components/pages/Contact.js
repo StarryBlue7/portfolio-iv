@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactForm from '../ContactForm';
 
+// Contact page
 function Contact() {
     return (
         <section className="page" style={{paddingBottom: "20vh"}}>

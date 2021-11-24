@@ -13,6 +13,7 @@ const styles = {
     fontSize: "80%",
 }
 
+// Navbar, change page state on button clicks
 function Navigation({ currentPage, handlePageChange }) {
     return (
         <ul style={styles} className='nav'>

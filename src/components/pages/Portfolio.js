@@ -1,6 +1,7 @@
 import React from 'react';
 import Project from '../Project';
 
+// Import project data JSON
 import projectData from '../../data/projectData.json';
 
 const styles = {
@@ -13,10 +14,12 @@ const styles = {
     }
 }
 
+// Portfolio page
 function Portfolio() {
     return (
         <section className="page">
             <h2>Portfolio</h2>
+            {/* Map project data to list */}
             <article style={styles.projects}>
                 {projectData.map((project, i) => (
                     <Project project={project} key={i} style={styles.project} />

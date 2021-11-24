@@ -23,15 +23,17 @@ const styles = {
     }
 }
 
+// Main page
 function Main() {
+    // Page state
     const [currentPage, setCurrentPage] = useState('');
-
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
         <main style={styles.main}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
+            {/* Conditional reveal animations based on page state */}
             <Fade bottom collapse when={currentPage === 'About'}>
                 <AboutMe />
             </Fade>

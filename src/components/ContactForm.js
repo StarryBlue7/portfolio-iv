@@ -34,6 +34,7 @@ function ContactForm() {
         }
     );
     
+    // Error message state
     const [errorMessage, setErrorMessage] = useState('');
 
     const handleInputChange = ({ target }) => {
