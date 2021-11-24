@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Quiz Game",
+        "img_url": "https://immense-lake-41636.herokuapp.com/images/quiz-game.gif",
+        "deployed_url": "https://starryblue7.github.io/quiz-game/",
+        "github_url": "https://github.com/StarryBlue7/quiz-game"
+    },
+    {
+        "title": "Weather Dashboard",
+        "img_url": "https://immense-lake-41636.herokuapp.com/images/weather-dashboard.gif",
+        "deployed_url": "https://starryblue7.github.io/weather-dashboard/",
+        "github_url": "https://github.com/StarryBlue7/weather-dashboard"
+    },
+    {
+        "title": "Kitschy | Kitchen Helper",
+        "img_url": "https://immense-lake-41636.herokuapp.com/images/kitschy.gif",
+        "deployed_url": "https://starryblue7.github.io/kitschy-app/",
+        "github_url": "https://github.com/StarryBlue7/kitschy-app"
+    },
+    {
+        "title": "Tech Blog",
+        "img_url": "https://github.com/StarryBlue7/tech-blog/raw/main/images/comment-demo.gif",
+        "deployed_url": "https://powerful-badlands-23075.herokuapp.com/",
+        "github_url": "https://github.com/StarryBlue7/celebrity-showdown"
+    },
+    {
+        "title": "Fitness Tracker",
+        "img_url": "https://github.com/StarryBlue7/fitness-tracker/raw/main/images/workout-dashboard.gif",
+        "deployed_url": "https://powerful-badlands-23075.herokuapp.com/",
+        "github_url": "https://github.com/StarryBlue7/celebrity-showdown"
+    },
+    {
+        "title": "Celebrity Showdown",
+        "img_url": "https://immense-lake-41636.herokuapp.com/images/celebrity-showdown.gif",
+        "deployed_url": "https://powerful-badlands-23075.herokuapp.com/",
+        "github_url": "https://github.com/StarryBlue7/celebrity-showdown"
+    }
+]
