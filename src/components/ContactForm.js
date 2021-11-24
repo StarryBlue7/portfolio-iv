@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
 
+const styles = {
+    form: {
+        display: 'flex',
+        flexFlow: 'row wrap',
+        gap: 20,
+    },
+    info: {
+        flex: '1 1 40%',
+    },
+    message: {
+        flex: '1 1 80%',
+    }
+}
+
 function ContactForm() {
     // Form state, initially empty
     const [formState, setFormState] = useState(
@@ -46,14 +60,15 @@ function ContactForm() {
     };
 
     return (
-        <div>
-            <form className="form">
+        <article>
+            <form style={styles.form}>
                 <input
                     value={formState.email}
                     name="email"
                     onChange={handleInputChange}
                     type="email"
                     placeholder="Email"
+                    style={styles.info}
                 />
                 <input
                     value={formState.name}
@@ -61,6 +76,7 @@ function ContactForm() {
                     onChange={handleInputChange}
                     type="text"
                     placeholder="Name"
+                    style={styles.info}
                 />
                 <input
                     value={formState.message}
@@ -68,6 +84,7 @@ function ContactForm() {
                     onChange={handleInputChange}
                     type="text"
                     placeholder="Message"
+                    style={styles.message}
                 />
                 <button type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
@@ -76,7 +93,7 @@ function ContactForm() {
                     <p className="error-text">{errorMessage}</p>
                 </div>
             )}
-        </div>
+        </article>
     );
 }
 
