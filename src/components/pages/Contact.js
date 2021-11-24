@@ -1,10 +1,11 @@
 import React from 'react';
+import ContactForm from '../ContactForm';
 
 function Contact() {
     return (
-        <section>
+        <section className="page">
             <h2>Contact Me</h2>
-            
+            <ContactForm />
         </section>
     )
 }
