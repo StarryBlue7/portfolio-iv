@@ -1,21 +1,21 @@
 import React from 'react';
 
 const styles = {
-  display: "flex",
-  flexFlow: "row wrap",
-  justifyContent: "center",
-  listStyleType: "none",
-  gap: 15,
-  width: "100%",
-  padding: 0,
-  margin: 0,
-  backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))",
-  fontSize: "80%",
+    display: "flex",
+    flexFlow: "row wrap",
+    justifyContent: "center",
+    listStyleType: "none",
+    gap: 15,
+    width: "100%",
+    padding: 0,
+    margin: 0,
+    backgroundImage: "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))",
+    fontSize: "80%",
 }
 
 function Navigation({ currentPage, handlePageChange }) {
     return (
-        <ul style={styles}>
+        <ul style={styles} className='nav'>
             <li><a
                 href="#home" onClick={() => handlePageChange('Home')}
                 className={currentPage === 'Home' ? 'active' : ''}

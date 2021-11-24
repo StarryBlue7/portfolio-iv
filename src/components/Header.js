@@ -16,7 +16,6 @@ const styles = {
     },
     profilePhoto: {
         paddingTop: "15vh",
-        width: 325,
     },
     h1: {
         margin: "-20px 0px 0px 0px",
@@ -35,6 +34,7 @@ function Header({ currentPage, handlePageChange }) {
             <Fade top collapse when={currentPage === 'Home'}>
                 <img 
                     style={styles.profilePhoto} 
+                    className="profile-img"
                     alt="Vince Lee" 
                     src={profileImg}
                     onLoad={() => handlePageChange('About')} 

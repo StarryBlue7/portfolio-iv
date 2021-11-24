@@ -8,12 +8,19 @@ import Contact from './pages/Contact'
 import Footer from './Footer';
 
 const styles = {
-    overflow: "hidden",
-    minHeight: "98vh",
-    height: "fit-content",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+    main: {
+        overflow: "hidden",
+        minHeight: "100vh",
+        flexGrow: 1,
+        height: "fit-content",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "flex-start"
+    },
+    spacer: {
+        flexGrow: 1
+    }
 }
 
 function Main() {
@@ -22,7 +29,7 @@ function Main() {
     const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <main style={styles}>
+        <main style={styles.main}>
             <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
             <Fade bottom collapse when={currentPage === 'About'}>
@@ -37,7 +44,7 @@ function Main() {
             <Fade bottom collapse when={currentPage === 'Contact'}>
                 <Contact />
             </Fade>
-            
+            <div style={styles.spacer} />
             <Footer />
         </main>
     );

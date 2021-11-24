@@ -49,9 +49,45 @@ h1, h2 {
 }
 
 .page {
-  width: 50vw;
+  width: 40vw;
 }
 
 .page > p {
   font-size: 80%;
+}
+
+.profile-img {
+  width: 325px
+}
+
+@media screen and (max-width: 1600px) {    
+  .page {
+    width: 50vw;
+  }
+/* 
+  summary > h4 {
+    font-size: 80%;
+  } */
+}
+
+@media screen and (max-width: 768px) {    
+  body {
+    font-size: 24px;
+  }
+  .profile-img {
+    width: 200px;
+  }
+  .page {
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    width: 90vw;
+  }
+  .nav > li {
+    text-align: center;
+    flex: 1 0 25%;
+  }
 }
