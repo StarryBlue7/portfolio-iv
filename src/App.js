@@ -5,12 +5,12 @@ import config from './data/particles.json';
 
 function App() {
   return (
-    <div>
-      <Main />
+    <div id="body">
       <Particles
         id="tsparticles"
         options={config}
       />
+      <Main />
     </div>
     
   );

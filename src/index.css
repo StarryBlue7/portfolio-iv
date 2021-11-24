@@ -19,12 +19,19 @@ body {
   color: var(--main-text-color);
   font-size: 36px;
   font-family: var(--content-font);
-  z-index: -2;
   margin: 0;
 }
 
 #root {
   min-height: 100vh;
+}
+
+#body {
+  z-index: 0;
+}
+
+#tsparticles {
+  z-index: -1;
 }
 
 a {
@@ -48,8 +55,13 @@ h1, h2 {
   text-align: center;
 }
 
+.nav {
+  z-index: 2;
+}
+
 .page {
   width: 40vw;
+  z-index: 2;
 }
 
 .page > p {
