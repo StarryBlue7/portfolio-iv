@@ -12,7 +12,7 @@ const styles = {
         
     },
     info: {
-        flex: '1 1 1',
+        flex: '1 1 30%',
         fontSize: '50%'
     },
     message: {
@@ -48,25 +48,53 @@ function ContactForm() {
             setErrorMessage('');
         }
     };
+    
+    // Check for valid email
+    const checkEmail = () => {
+        if (!validateEmail(formState.email)) {
+            setErrorMessage('Valid email is required');
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    // Check name not blank
+    const checkName = () => {
+        if (!formState.name.trim()) {
+            setErrorMessage('Name required');
+            return false;
+        } else {
+            return true;
+        }
+    }
+
+    // Check message not blank
+    const checkMessage = () => {
+        if (!formState.message.trim()) {
+            setErrorMessage('Message required');
+            return false;
+        } else {
+            return true;
+        }
+    }
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        // Check for valid email
-        if (!validateEmail(formState.email)) {
-            setErrorMessage('Email is invalid');
-            return;
+        if (checkEmail() && checkName() && checkMessage()) {
+            // Confirm message sent and reset form
+            alert(`Message sent!`);
+            setFormState(
+                {
+                    name: '',
+                    email: '',
+                    message: '',
+                }
+            ) 
+        } else {
+            alert(`Message failed!`);
         }
-
-        // Confirm message sent and reset form
-        alert(`Message sent!`);
-        setFormState(
-            {
-                name: '',
-                email: '',
-                message: '',
-            }
-        )
     };
 
     return (
@@ -76,6 +104,7 @@ function ContactForm() {
                     value={formState.email}
                     name="email"
                     onChange={handleInputChange}
+                    onBlur={checkEmail}
                     type="email"
                     placeholder="Email"
                     style={styles.info}
@@ -84,17 +113,20 @@ function ContactForm() {
                     value={formState.name}
                     name="name"
                     onChange={handleInputChange}
+                    onBlur={checkName}
                     type="text"
                     placeholder="Name"
                     style={styles.info}
                 />
-                <input
+                <textarea
                     value={formState.message}
                     name="message"
                     onChange={handleInputChange}
+                    onBlur={checkMessage}
                     type="text"
                     placeholder="Message"
                     style={styles.message}
+                    rows="5"
                 />
                 <button type="button" onClick={handleFormSubmit}>Submit</button>
             </form>
