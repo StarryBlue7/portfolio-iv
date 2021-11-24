@@ -16,6 +16,12 @@ Utilizing Matteo Bruni's [tsParticles library](https://github.com/matteobruni/ts
 
 ---
 
+## Deployed Page
+
+* [See Live Site](https://starryblue7.github.io/portfolio-iv/).
+
+---
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -46,10 +52,6 @@ These instructions will get you a copy of the project up and running on your loc
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML).
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS).
 * [GitHub](https://github.com/).
-
-## Deployed Page
-
-* [See Live Site](https://starryblue7.github.io/portfolio-iv/).
 
 ## Author
 
