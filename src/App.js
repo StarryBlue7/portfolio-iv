@@ -1,4 +1,3 @@
-import './App.css';
 import Main from './components/Main';
 import Particles from 'react-tsparticles';
 import config from './data/particles.json';
