@@ -16,10 +16,11 @@ const styles = {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
+        marginRight: "calc(-1 * (100vw - 100%))" // Prevent content shifting by scrollbar appearance
     },
     spacer: {
-        flexGrow: 1
+        flexGrow: 1 // Spacer to keep Footer at bottom on smaller pages
     }
 }
 
