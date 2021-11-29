@@ -11,7 +11,6 @@ const styles = {
         alignItems: "center"
     },
     profile: {
-        
         paddingBottom: 10,
     },
     profilePhoto: {
@@ -37,7 +36,7 @@ function Header({ currentPage, handlePageChange }) {
                     className="profile-img"
                     alt="Vince Lee" 
                     src={profileImg}
-                    onLoad={() => handlePageChange('About')} 
+                    onLoad={() => handlePageChange('Home')} 
                 />
                 <h1 style={styles.h1}>Vince Lee</h1> 
                 <h3 style={styles.h3}>Full-Stack Web Developer</h3>
