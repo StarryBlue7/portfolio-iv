@@ -99,7 +99,7 @@ function ContactForm() {
 
     return (
         <article>
-            <form style={styles.form}>
+            <form id="contact-form" style={styles.form}>
                 <input
                     value={formState.email}
                     name="email"

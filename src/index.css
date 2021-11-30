@@ -4,7 +4,9 @@
   --header-font: 'heyAugust', 'Satisfy', 'Garamond';
   --content-font: 'Montserrat', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
   --main-text-color: white;
-  --accent-color: #A6E1FA;
+  --accent-color1: #A6E1FA;
+  --accent-color2: #0E6BA8;
+  --background-color: #00072D;
 }
 
 @font-face {
@@ -13,7 +15,7 @@
 }
 
 body {
-  background-image: linear-gradient(150deg, black, #00072D, black);
+  background-image: linear-gradient(150deg, black, var(--background-color), black);
   min-height: 100vh;
   scroll-behavior: smooth;
   color: var(--main-text-color);
@@ -36,21 +38,21 @@ body {
 
 a {
   text-decoration: none;
-  color: #A6E1FA;
+  color: var(--accent-color1);
 }
 
 a:hover {
   text-decoration: none;
-  color: #0E6BA8;
+  color: var(--accent-color2);
 }
 
 .active {
-  color: white;
+  color: var(--main-text-color);
 }
 
 h1, h2 {
   font-family: var(--header-font);
-  color: var(--accent-color);
+  color: var(--accent-color1);
   font-weight: normal;
   text-align: center;
 }
@@ -70,6 +72,21 @@ h1, h2 {
 
 .profile-img {
   width: 325px
+}
+
+#contact-form > input, #contact-form > textarea, #contact-form > button {
+  font-family: var(--content-font);
+}
+
+button {
+  background-color: var(--accent-color2);
+  color: var(--main-text-color);
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: var(--accent-color1);
+  color: var(--accent-color2);
 }
 
 @media screen and (max-width: 1600px) {    
