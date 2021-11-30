@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio-iv/static/css/main.022d618e.chunk.css",
-    "main.js": "/portfolio-iv/static/js/main.1c47516b.chunk.js",
-    "main.js.map": "/portfolio-iv/static/js/main.1c47516b.chunk.js.map",
+    "main.css": "/portfolio-iv/static/css/main.b603376a.chunk.css",
+    "main.js": "/portfolio-iv/static/js/main.da4325b6.chunk.js",
+    "main.js.map": "/portfolio-iv/static/js/main.da4325b6.chunk.js.map",
     "runtime-main.js": "/portfolio-iv/static/js/runtime-main.6149ec71.js",
     "runtime-main.js.map": "/portfolio-iv/static/js/runtime-main.6149ec71.js.map",
     "static/js/2.20cc0f33.chunk.js": "/portfolio-iv/static/js/2.20cc0f33.chunk.js",
     "static/js/2.20cc0f33.chunk.js.map": "/portfolio-iv/static/js/2.20cc0f33.chunk.js.map",
     "index.html": "/portfolio-iv/index.html",
-    "static/css/main.022d618e.chunk.css.map": "/portfolio-iv/static/css/main.022d618e.chunk.css.map",
+    "static/css/main.b603376a.chunk.css.map": "/portfolio-iv/static/css/main.b603376a.chunk.css.map",
     "static/js/2.20cc0f33.chunk.js.LICENSE.txt": "/portfolio-iv/static/js/2.20cc0f33.chunk.js.LICENSE.txt",
     "static/media/CV_VinceLee_2021.795d5ca3.pdf": "/portfolio-iv/static/media/CV_VinceLee_2021.795d5ca3.pdf",
     "static/media/index.css": "/portfolio-iv/static/media/HeyAugust.a0f9d0c5.ttf",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.6149ec71.js",
     "static/js/2.20cc0f33.chunk.js",
-    "static/css/main.022d618e.chunk.css",
-    "static/js/main.1c47516b.chunk.js"
+    "static/css/main.b603376a.chunk.css",
+    "static/js/main.da4325b6.chunk.js"
   ]
 }
