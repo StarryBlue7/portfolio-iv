@@ -34,5 +34,11 @@
         "img_url": "https://immense-lake-41636.herokuapp.com/images/celebrity-showdown.gif",
         "deployed_url": "https://powerful-badlands-23075.herokuapp.com/",
         "github_url": "https://github.com/StarryBlue7/celebrity-showdown"
+    },
+    {
+        "title": "Catventure!",
+        "img_url": "https://github.com/StarryBlue7/catventure-game/raw/main/screenshots/rpg-demo.gif",
+        "deployed_url": "https://catventure.herokuapp.com/",
+        "github_url": "https://github.com/StarryBlue7/catventure-game"
     }
 ]
