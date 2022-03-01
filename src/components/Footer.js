@@ -17,6 +17,7 @@ const styles = {
         textAlign: "center",
         fontSize: "50%",
         justifySelf: "flex-end",
+        zIndex: 1
     }
 }
 
@@ -36,7 +37,7 @@ function Footer() {
                     <FaLinkedin style={styles.icon} />
                 </a>
             </section>
-            <p>&copy; Vince Lee 2021</p>
+            <p>&copy; Vince Lee 2022</p>
         </footer>
     )
 }
