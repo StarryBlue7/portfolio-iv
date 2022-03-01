@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-iv/static/css/main.b603376a.chunk.css",
-    "main.js": "/portfolio-iv/static/js/main.8f0fc19e.chunk.js",
-    "main.js.map": "/portfolio-iv/static/js/main.8f0fc19e.chunk.js.map",
+    "main.js": "/portfolio-iv/static/js/main.a7fdb9d7.chunk.js",
+    "main.js.map": "/portfolio-iv/static/js/main.a7fdb9d7.chunk.js.map",
     "runtime-main.js": "/portfolio-iv/static/js/runtime-main.6149ec71.js",
     "runtime-main.js.map": "/portfolio-iv/static/js/runtime-main.6149ec71.js.map",
     "static/js/2.20cc0f33.chunk.js": "/portfolio-iv/static/js/2.20cc0f33.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/portfolio-iv/index.html",
     "static/css/main.b603376a.chunk.css.map": "/portfolio-iv/static/css/main.b603376a.chunk.css.map",
     "static/js/2.20cc0f33.chunk.js.LICENSE.txt": "/portfolio-iv/static/js/2.20cc0f33.chunk.js.LICENSE.txt",
-    "static/media/CV_VinceLee_2021.795d5ca3.pdf": "/portfolio-iv/static/media/CV_VinceLee_2021.795d5ca3.pdf",
+    "static/media/CV_VinceLee_2022.9ff20668.pdf": "/portfolio-iv/static/media/CV_VinceLee_2022.9ff20668.pdf",
     "static/media/index.css": "/portfolio-iv/static/media/HeyAugust.a0f9d0c5.ttf",
     "static/media/profile.336696ef.png": "/portfolio-iv/static/media/profile.336696ef.png"
   },
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6149ec71.js",
     "static/js/2.20cc0f33.chunk.js",
     "static/css/main.b603376a.chunk.css",
-    "static/js/main.8f0fc19e.chunk.js"
+    "static/js/main.a7fdb9d7.chunk.js"
   ]
 }
