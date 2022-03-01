@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../../assets/CV_VinceLee_2021.pdf'
+import resume from '../../assets/CV_VinceLee_2022.pdf'
 
 const styles = {
     resume: {
