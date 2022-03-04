@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { validateEmail } from '../utils/helpers';
+import emailjs from '@emailjs/browser';
 
 const styles = {
     container: {
@@ -83,6 +84,20 @@ function ContactForm() {
         e.preventDefault();
 
         if (checkEmail() && checkName() && checkMessage()) {
+            // Send email via emailjs
+            // const formData = { 
+            //     user_name: formState.name, 
+            //     user_email: formState.email,
+            //     message: formState.message
+            // }
+
+            emailjs.send('service_ql4acuo', 'template_5d2olti', formState, 'WI8VAVeHF_AjbZwSc')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
+
             // Confirm message sent and reset form
             alert(`Message sent!`);
             setFormState(
