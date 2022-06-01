@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
 import Fade from 'react-reveal/Fade';
 import Header from './Header';
 import AboutMe from './pages/AboutMe';
@@ -26,25 +28,26 @@ const styles = {
 
 // Main page
 function Main() {
-    // Page state
-    const [currentPage, setCurrentPage] = useState('');
-    const handlePageChange = (page) => setCurrentPage(page);
+    // Page location state
+    const currentPage = useLocation().pathname;
 
     return (
         <main style={styles.main}>
-            <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Header 
+                currentPage={currentPage} 
+            />
 
-            {/* Conditional reveal animations based on page state */}
-            <Fade bottom collapse when={currentPage === 'About'}>
+            {/* Conditional reveal animations based on page location state */}
+            <Fade bottom collapse when={currentPage === '/about'}>
                 <AboutMe />
             </Fade>
-            <Fade bottom collapse when={currentPage === 'Portfolio'}>
+            <Fade bottom collapse when={currentPage === '/portfolio'}>
                 <Portfolio />
             </Fade>
-            <Fade bottom collapse when={currentPage === 'Resume'}>
+            <Fade bottom collapse when={currentPage === '/resume'}>
                 <Resume />
             </Fade>
-            <Fade bottom collapse when={currentPage === 'Contact'}>
+            <Fade bottom collapse when={currentPage === '/contact'}>
                 <Contact />
             </Fade>
             <div style={styles.spacer} />
