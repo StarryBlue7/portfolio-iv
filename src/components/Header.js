@@ -27,21 +27,23 @@ const styles = {
     }
 }
 
-function Header({ currentPage, handlePageChange }) {
+function Header({ currentPage }) {
     return (
         <header style={styles.header}>
-            <Fade top collapse when={currentPage === 'Home'}>
+            <Fade top collapse when={currentPage === '/'}>
                 <img 
                     style={styles.profilePhoto} 
                     className="profile-img"
                     alt="Vince Lee" 
                     src={profileImg}
-                    onLoad={() => handlePageChange('Home')} 
+                    // onLoad={() => handlePageChange('home')} 
                 />
                 <h1 style={styles.h1}>Vince Lee</h1> 
                 <h3 style={styles.h3}>Full-Stack Web Developer</h3>
             </Fade>
-            <Navigation currentPage={currentPage} handlePageChange={handlePageChange}  />
+            <Navigation 
+                currentPage={currentPage} 
+            />
         </header>
     )
 }

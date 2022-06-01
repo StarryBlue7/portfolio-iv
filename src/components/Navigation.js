@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const styles = {
     display: "flex",
@@ -13,35 +14,35 @@ const styles = {
     fontSize: "80%",
 }
 
-// Navbar, change page state on button clicks
-function Navigation({ currentPage, handlePageChange }) {
+// Navbar, change page location state on button clicks
+function Navigation({ currentPage }) {
     return (
         <ul style={styles} className='nav'>
-            <li><a
-                href="#home" onClick={() => handlePageChange('Home')}
-                className={currentPage === 'Home' ? 'active' : ''}
+            <li><Link
+                to="/" 
+                className={currentPage === '/' ? 'active' : ''}
                 >Home
-            </a></li>
-            <li><a
-                href="#about" onClick={() => handlePageChange('About')}
-                className={currentPage === 'About' ? 'active' : ''}
+            </Link></li>
+            <li><Link
+                to="/about" 
+                className={currentPage === '/about' ? 'active' : ''}
                 >About
-            </a></li>
-            <li><a
-                href="#portfolio" onClick={() => handlePageChange('Portfolio')}
-                className={currentPage === 'Portfolio' ? 'active' : ''}
+            </Link></li>
+            <li><Link
+                to="/portfolio" 
+                className={currentPage === '/portfolio' ? 'active' : ''}
                 >Portfolio
-            </a></li>
-            <li><a
-                href="#resume" onClick={() => handlePageChange('Resume')}
-                className={currentPage === 'Resume' ? 'active' : ''}
+            </Link></li>
+            <li><Link
+                to="/resume" 
+                className={currentPage === '/resume' ? 'active' : ''}
                 >Résumé
-            </a></li>
-            <li><a
-                href="#contact" onClick={() => handlePageChange('Contact')}
-                className={currentPage === 'Contact' ? 'active' : ''}
+            </Link></li>
+            <li><Link
+                to="/contact" 
+                className={currentPage === '/contact' ? 'active' : ''}
                 >Contact
-            </a></li>
+            </Link></li>
         </ul>
     );
 }
