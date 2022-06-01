@@ -25,7 +25,7 @@ function Footer() {
     return (
         <footer style={styles.footer}>
             <section style={styles.iconBox}>
-                <a target="_blank" rel="noreferrer" href="mailto:StarryBlue7@gmail.com">
+                <a target="_blank" rel="noreferrer" href="mailto:vince.lee.dev@gmail.com">
                     <BiMailSend style={styles.icon} />
                 </a>
                 
