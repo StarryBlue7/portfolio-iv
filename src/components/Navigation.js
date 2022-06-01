@@ -19,28 +19,28 @@ function Navigation({ currentPage }) {
     return (
         <ul style={styles} className='nav'>
             <li><Link
-                to="/" 
-                className={currentPage === '/' ? 'active' : ''}
+                to="/portfolio-iv/" 
+                className={currentPage === '/portfolio-iv/' ? 'active' : ''}
                 >Home
             </Link></li>
             <li><Link
-                to="/about" 
-                className={currentPage === '/about' ? 'active' : ''}
+                to="/portfolio-iv/about" 
+                className={currentPage === '/portfolio-iv/about' ? 'active' : ''}
                 >About
             </Link></li>
             <li><Link
-                to="/portfolio" 
-                className={currentPage === '/portfolio' ? 'active' : ''}
+                to="/portfolio-iv/portfolio" 
+                className={currentPage === '/portfolio-iv/portfolio' ? 'active' : ''}
                 >Portfolio
             </Link></li>
             <li><Link
-                to="/resume" 
-                className={currentPage === '/resume' ? 'active' : ''}
+                to="/portfolio-iv/resume" 
+                className={currentPage === '/portfolio-iv/resume' ? 'active' : ''}
                 >Résumé
             </Link></li>
             <li><Link
-                to="/contact" 
-                className={currentPage === '/contact' ? 'active' : ''}
+                to="/portfolio-iv/contact" 
+                className={currentPage === '/portfolio-iv/contact' ? 'active' : ''}
                 >Contact
             </Link></li>
         </ul>

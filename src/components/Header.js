@@ -33,7 +33,7 @@ function Header({ currentPage }) {
 
     return (
         <header style={styles.header}>
-            <Fade top collapse when={currentPage === '/' && imgReady}>
+            <Fade top collapse when={(currentPage === '/portfolio-iv' || currentPage === '/portfolio-iv/') && imgReady === true}>
                 <img 
                     style={styles.profilePhoto} 
                     className="profile-img"
