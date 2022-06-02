@@ -38,16 +38,16 @@ function Main() {
             />
 
             {/* Conditional reveal animations based on page location state */}
-            <Fade bottom collapse when={currentPage === '/portfolio-iv/about'}>
+            <Fade bottom collapse when={currentPage === '/about'}>
                 <AboutMe />
             </Fade>
-            <Fade bottom collapse when={currentPage === '/portfolio-iv/portfolio'}>
+            <Fade bottom collapse when={currentPage === '/portfolio'}>
                 <Portfolio />
             </Fade>
-            <Fade bottom collapse when={currentPage === '/portfolio-iv/resume'}>
+            <Fade bottom collapse when={currentPage === '/resume'}>
                 <Resume />
             </Fade>
-            <Fade bottom collapse when={currentPage === '/portfolio-iv/contact'}>
+            <Fade bottom collapse when={currentPage === '/contact'}>
                 <Contact />
             </Fade>
             <div style={styles.spacer} />
