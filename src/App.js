@@ -1,7 +1,6 @@
 import Main from './components/Main';
 import Particles from 'react-tsparticles';
 import config from './data/particles.json';
-import { BrowserRouter as Router } from 'react-router-dom';
 
 const styles = {
   background: {
@@ -16,10 +15,9 @@ function App() {
         id="tsparticles"
         options={config}
       />
-      <Router>
-        <Main />
-      </Router>  
+      <Main />
     </div>
+    
   );
 }
 
