@@ -13,8 +13,7 @@ function Resume() {
         <section className="page resume">
             <h2>Résumé & CV</h2>
             <iframe 
-                id="resumeEmbed"
-                src="https://onedrive.live.com/embed?cid=F69DEF0A9F7B5ED0&resid=F69DEF0A9F7B5ED0%216735&authkey=AIYfAKLwHpj3hnI&em=2" 
+                src="https://onedrive.live.com/embed?cid=F69DEF0A9F7B5ED0&resid=F69DEF0A9F7B5ED0%216772&authkey=AKaW1Y4jdXODH8A&em=2" 
                 style={styles.resume} 
                 title="cv"
                 frameborder="0" 
