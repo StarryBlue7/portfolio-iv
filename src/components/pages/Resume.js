@@ -1,19 +1,25 @@
 import React from 'react';
-import resume from '../../assets/CV_VinceLee_2022.pdf'
 
 const styles = {
     resume: {
         width: "100%",
-        height: "60vh",
+        height: "65vh",
     }
 }
 
 // Resume & skills page
 function Resume() {
     return (
-        <section className="page">
+        <section className="page resume">
             <h2>Résumé & CV</h2>
-            <embed src={resume} style={styles.resume} />
+            <iframe 
+                id="resumeEmbed"
+                src="https://onedrive.live.com/embed?cid=F69DEF0A9F7B5ED0&resid=F69DEF0A9F7B5ED0%216735&authkey=AIYfAKLwHpj3hnI&em=2" 
+                style={styles.resume} 
+                title="cv"
+                frameborder="0" 
+                scrolling="no"
+            ></iframe>
 
             <h2>Skills</h2>
             <ul>
