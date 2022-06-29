@@ -1,9 +1,17 @@
 import React from 'react';
+import resume from '../../assets/CV_VinceLee_2022.pdf'
 
 const styles = {
     resume: {
         width: "100%",
         height: "65vh",
+    },
+    download: {
+        width: "100%",
+        textAlign: "center",
+        fontSize: "60%",
+        marginTop: 0,
+        marginBottom: 60,
     }
 }
 
@@ -19,6 +27,9 @@ function Resume() {
                 frameborder="0" 
                 scrolling="no"
             ></iframe>
+            <p style={styles.download}>
+                <a href={resume} download>Download</a>
+            </p>
 
             <h2>Skills</h2>
             <ul>
