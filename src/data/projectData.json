@@ -20,14 +20,14 @@
     {
         "title": "Tech Blog",
         "img_url": "https://github.com/StarryBlue7/tech-blog/raw/main/images/comment-demo.gif",
-        "deployed_url": "https://powerful-badlands-23075.herokuapp.com/",
-        "github_url": "https://github.com/StarryBlue7/celebrity-showdown"
+        "deployed_url": "https://secret-harbor-03518.herokuapp.com/",
+        "github_url": "https://github.com/StarryBlue7/tech-blog"
     },
     {
         "title": "Fitness Tracker",
         "img_url": "https://github.com/StarryBlue7/fitness-tracker/raw/main/images/workout-dashboard.gif",
-        "deployed_url": "https://powerful-badlands-23075.herokuapp.com/",
-        "github_url": "https://github.com/StarryBlue7/celebrity-showdown"
+        "deployed_url": "https://dry-waters-62412.herokuapp.com/?id=61a5ce52c2897300167bbf7a",
+        "github_url": "https://github.com/StarryBlue7/fitness-tracker"
     },
     {
         "title": "Celebrity Showdown",
