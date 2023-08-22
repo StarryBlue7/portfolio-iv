@@ -35,15 +35,17 @@ function Resume() {
 
             <h2>Skills</h2>
             <ul>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Java</li>
-                <li>SQL</li>
-                <li>MongoDB</li>
+                <li>JavaScript, TypeScript</li>
+                <li>React, JSX, Redux</li>
+                <li>Node, Express</li>
+                <li>SQL, Seqeuelize, PostgreSQL</li>
+                <li>NoSQL, MongoDB, Mongoose</li>
+                <li>GraphQL</li>
+                <li>C#, .NET</li>
+                <li>Python</li>
                 <li>jQuery</li>
                 <li>CSS/HTML5</li>
-                <li>Responsive Web Design</li>
+                <li>SEO & Responsive Web Design</li>
             </ul>
         </section>
     );

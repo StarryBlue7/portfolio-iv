@@ -49,7 +49,7 @@ function Footer() {
                     <FaLinkedin style={styles.icon} />
                 </a>
             </section>
-            <p>&copy; Vince Lee Zak 2022</p>
+            <p>&copy; Vince Lee Zak 2023</p>
         </footer>
     );
 }
