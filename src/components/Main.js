@@ -35,6 +35,9 @@ function Main() {
     const [imgsReady, setImgsReady] = useState(false);
     const [imgsStatus, setImgsStatus] = useState([false]);
 
+    // Resume embed loaded
+    const [resumeReady, setResumeReady] = useState(false);
+
     useEffect(() => {
         let allReady = true;
         console.log(imgsStatus);
@@ -61,8 +64,15 @@ function Main() {
             >
                 <Portfolio imgsReady setImgsStatus={setImgsStatus} />
             </Fade>
-            <Fade bottom collapse when={currentPage === "/resume"}>
-                <Resume />
+            <Fade
+                bottom
+                collapse
+                when={currentPage === "/resume" && resumeReady === true}
+            >
+                <Resume
+                    resumeReady={resumeReady}
+                    setResumeReady={setResumeReady}
+                />
             </Fade>
             <Fade bottom collapse when={currentPage === "/contact"}>
                 <Contact />
