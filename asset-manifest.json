@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-iv/static/css/main.49c054f3.chunk.css",
-    "main.js": "/portfolio-iv/static/js/main.3bf48c90.chunk.js",
-    "main.js.map": "/portfolio-iv/static/js/main.3bf48c90.chunk.js.map",
+    "main.js": "/portfolio-iv/static/js/main.770b5ed4.chunk.js",
+    "main.js.map": "/portfolio-iv/static/js/main.770b5ed4.chunk.js.map",
     "runtime-main.js": "/portfolio-iv/static/js/runtime-main.6149ec71.js",
     "runtime-main.js.map": "/portfolio-iv/static/js/runtime-main.6149ec71.js.map",
     "static/js/2.12f2ffe5.chunk.js": "/portfolio-iv/static/js/2.12f2ffe5.chunk.js",
@@ -10,7 +10,6 @@
     "index.html": "/portfolio-iv/index.html",
     "static/css/main.49c054f3.chunk.css.map": "/portfolio-iv/static/css/main.49c054f3.chunk.css.map",
     "static/js/2.12f2ffe5.chunk.js.LICENSE.txt": "/portfolio-iv/static/js/2.12f2ffe5.chunk.js.LICENSE.txt",
-    "static/media/CV_VinceLeeZak_2023.92a9bb6d.pdf": "/portfolio-iv/static/media/CV_VinceLeeZak_2023.92a9bb6d.pdf",
     "static/media/index.css": "/portfolio-iv/static/media/HeyAugust.a0f9d0c5.ttf",
     "static/media/profile.336696ef.png": "/portfolio-iv/static/media/profile.336696ef.png"
   },
@@ -18,6 +17,6 @@
     "static/js/runtime-main.6149ec71.js",
     "static/js/2.12f2ffe5.chunk.js",
     "static/css/main.49c054f3.chunk.css",
-    "static/js/main.3bf48c90.chunk.js"
+    "static/js/main.770b5ed4.chunk.js"
   ]
 }
