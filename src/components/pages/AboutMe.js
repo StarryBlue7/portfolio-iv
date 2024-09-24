@@ -6,27 +6,21 @@ function AboutMe() {
         <section className="page">
             <h2>About Me</h2>
             <p>
-                While completing my Bachelor's of Science in chemistry, I was
-                additionally trained in graphic design, Python, and
-                computational chemistry.
+                Having grown up with an innate love for science and technology,
+                I've found a natural fit in diverse STEM roles, ranging from
+                analytical lab research to cloud biotech SaaS to computer
+                science education.
             </p>
             <p>
-                This led quickly into working for a web-based cloud biotech
-                company, where my software development skills were further
-                refined, and I found a true love of the process.
+                Among the skills I've developed in software development and lab
+                sciences, I have additionally studied graphic design, data
+                analytics, responsive/accessible design, and SEO.
             </p>
             <p>
-                So, to properly pursue a developer career, I completed a
-                full-stack web development course at UC Berkeley Extension,
-                where I was shortly after hired to stay on as an instructional
-                specialist.
-            </p>
-            <p>
-                I've since been applying my proficiency in quickly picking up
-                new frameworks and effective technical communication to
-                teaching, advising, and debugging alongside hundreds of students
-                across multiple course cohorts from varying socioeconomic
-                backgrounds and technical proficiencies.
+                I'm currently applying my proficiency in quickly picking up new
+                frameworks and effective technical communication to teaching,
+                advising, and debugging alongside hundreds of students across
+                varying socioeconomic backgrounds and technical proficiencies.
             </p>
         </section>
     );
